@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunkawakan Training Club – Box de CrossFit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <img src="assets/img/logo.png" alt="Sunkawakan Training Club" class="nav__logo-img" />
+      <span class="nav__logo-text">SUNKA<span class="accent">WAKAN</span></span>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+      <li><a href="#clases" class="nav__link">Clases</a></li>
+      <li><a href="#programacion" class="nav__link">Programación</a></li>
+      <li><a href="#coaches" class="nav__link">Coaches</a></li>
+      <li><a href="#tarifas" class="nav__link">Tarifas</a></li>
+      <li><a href="#contacto" class="nav__link nav__link--cta">Únete</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__logo-bg">
+      <img src="assets/img/logo.png" alt="" aria-hidden="true" class="hero__logo-bg-img" />
+    </div>
+    <div class="hero__bg-strokes">
+      <div class="stroke stroke--cyan"></div>
+      <div class="stroke stroke--lime"></div>
+      <div class="stroke stroke--lavender"></div>
+    </div>
+    <div class="hero__noise"></div>
+    <div class="hero__content">
+      <div class="hero__tag reveal-up">
+        <span class="dot dot--cyan"></span>
+        <span>Granada · Est. 2018</span>
+      </div>
+      <h1 class="hero__title reveal-up">
+        <span class="hero__title-line">ENTRENA</span>
+        <span class="hero__title-line hero__title-line--outline">MÁS FUERTE.</span>
+        <span class="hero__title-line">VÍ<span class="accent">VE</span> MEJOR.</span>
+      </h1>
+      <p class="hero__subtitle reveal-up">
+        Somos más que un box. Somos tu comunidad, tu refugio, tu reto diario.
+        CrossFit para todos los niveles con coaches que de verdad se preocupan por ti.
+      </p>
+      <div class="hero__ctas reveal-up">
+        <a href="#tarifas" class="btn btn--primary">Empieza gratis</a>
+        <a href="#clases" class="btn btn--ghost">Ver clases</a>
+      </div>
+    </div>
+    <div class="hero__stats reveal-right">
+      <div class="stat">
+        <span class="stat__num" data-target="350">0</span>
+        <span class="stat__label">Atletas activos</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-target="6">0</span>
+        <span class="stat__label">Años de historia</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-target="12">0</span>
+        <span class="stat__label">Clases semanales</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>FUERZA</span><span class="sep">✦</span>
+      <span>COMUNIDAD</span><span class="sep">✦</span>
+      <span>CONSTANCIA</span><span class="sep">✦</span>
+      <span>DIVERSIÓN</span><span class="sep">✦</span>
+      <span>SALUD</span><span class="sep">✦</span>
+      <span>SUPERACIÓN</span><span class="sep">✦</span>
+      <span>FUERZA</span><span class="sep">✦</span>
+      <span>COMUNIDAD</span><span class="sep">✦</span>
+      <span>CONSTANCIA</span><span class="sep">✦</span>
+      <span>DIVERSIÓN</span><span class="sep">✦</span>
+      <span>SALUD</span><span class="sep">✦</span>
+      <span>SUPERACIÓN</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros section" id="nosotros">
+    <div class="container">
+      <div class="nosotros__grid">
+        <div class="nosotros__visual">
+          <div class="visual-card visual-card--main">
+            <div class="visual-card__inner">
+              <div class="visual-icon">🏋️</div>
+              <p class="visual-card__text">WOD del día</p>
+              <p class="visual-card__sub">Amrap 20 min · 5 Pull-ups · 10 Push-ups · 15 Squats</p>
+            </div>
+          </div>
+          <div class="visual-card visual-card--float visual-card--cyan">
+            <span class="visual-card__emoji">🔥</span>
+            <span>+23 personas hoy</span>
+          </div>
+          <div class="visual-card visual-card--float visual-card--lime" style="bottom:10%;left:-10%">
+            <span class="visual-card__emoji">⏱</span>
+            <span>PR batido</span>
+          </div>
+          <div class="brush-bg brush-bg--nosotros"></div>
+        </div>
+        <div class="nosotros__content">
+          <div class="section-tag reveal-up">
+            <span class="dot dot--lime"></span>Nuestra historia
+          </div>
+          <h2 class="section-title reveal-up">Un box<br/>que siente<br/><em>diferente.</em></h2>
+          <p class="body-text reveal-up">
+            Sunkawakan nació con una misión clara: crear un espacio donde el entrenamiento funcional sea accesible, divertido y transformador para cualquier persona, sin importar su nivel de partida.
+          </p>
+          <p class="body-text reveal-up">
+            Nuestro nombre significa <strong>"caballo sagrado"</strong> en lakota, símbolo de fuerza libre y espíritu indomable. Eso somos. Eso serás.
+          </p>
+          <div class="nosotros__pillars reveal-up">
+            <div class="pillar">
+              <span class="pillar__icon">🤝</span>
+              <div>
+                <strong>Comunidad real</strong>
+                <p>Nadie se queda atrás en Sunkawakan. Celebramos cada PR juntos.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar__icon">📈</span>
+              <div>
+                <strong>Progresión inteligente</strong>
+                <p>Cada WOD está diseñado para que mejores de forma sostenida y segura.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar__icon">😄</span>
+              <div>
+                <strong>Diversión garantizada</strong>
+                <p>Creemos que si no lo disfrutas, no es sostenible. Hacemos que cada sesión valga.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASES -->
+  <section class="clases section section--dark" id="clases">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag section-tag--light reveal-up">
+          <span class="dot dot--cyan"></span>Lo que ofrecemos
+        </div>
+        <h2 class="section-title section-title--light reveal-up">Clases para<br/>cada <em>versión</em> de ti.</h2>
+      </div>
+      <div class="clases__grid">
+        <div class="clase-card reveal-up" data-delay="0">
+          <div class="clase-card__accent" style="background:var(--cyan)"></div>
+          <div class="clase-card__icon">⚡</div>
+          <h3>CrossFit WOD</h3>
+          <p>Nuestras clases estrella. Alta intensidad, variedad infinita y una comunidad que te empuja. Para todos los niveles con escalado personalizado.</p>
+          <div class="clase-card__details">
+            <span>60 min</span>
+            <span>Todos los niveles</span>
+          </div>
+          <div class="clase-card__times">
+            <span>7:00</span><span>9:00</span><span>13:00</span><span>19:00</span><span>20:00</span>
+          </div>
+        </div>
+        <div class="clase-card reveal-up" data-delay="100">
+          <div class="clase-card__accent" style="background:var(--lime)"></div>
+          <div class="clase-card__icon">🌱</div>
+          <h3>CrossFit Iniciación</h3>
+          <p>Tu primer contacto con el método. Aprende los movimientos fundamentales en un ambiente seguro y divertido antes de unirte al grupo general.</p>
+          <div class="clase-card__details">
+            <span>75 min</span>
+            <span>Principiantes</span>
+          </div>
+          <div class="clase-card__times">
+            <span>10:00 Sáb</span><span>11:30 Dom</span>
+          </div>
+        </div>
+        <div class="clase-card reveal-up" data-delay="200">
+          <div class="clase-card__accent" style="background:var(--lavender)"></div>
+          <div class="clase-card__icon">🏋️</div>
+          <h3>Olympic Lifting</h3>
+          <p>Domina el arrancada y el dos tiempos. Clases técnicas centradas en la halterofilia olímpica para mejorar tu potencia y coordinación.</p>
+          <div class="clase-card__details">
+            <span>60 min</span>
+            <span>Intermedio-Avanzado</span>
+          </div>
+          <div class="clase-card__times">
+            <span>Martes 18:00</span><span>Jueves 18:00</span>
+          </div>
+        </div>
+        <div class="clase-card reveal-up" data-delay="300">
+          <div class="clase-card__accent" style="background:var(--cyan)"></div>
+          <div class="clase-card__icon">💪</div>
+          <h3>Gymnastics & Skills</h3>
+          <p>Muscle-up, handstand, ring work… Mejora tu control corporal y desbloquea movimientos que creías imposibles.</p>
+          <div class="clase-card__details">
+            <span>60 min</span>
+            <span>Todos los niveles</span>
+          </div>
+          <div class="clase-card__times">
+            <span>Lunes 18:00</span><span>Miércoles 18:00</span>
+          </div>
+        </div>
+        <div class="clase-card reveal-up" data-delay="400">
+          <div class="clase-card__accent" style="background:var(--lime)"></div>
+          <div class="clase-card__icon">🏃</div>
+          <h3>Endurance</h3>
+          <p>Running, rowing y asaltos de cardio. Mejora tu capacidad aeróbica y nunca más sufras en la última ronda del WOD.</p>
+          <div class="clase-card__details">
+            <span>45 min</span>
+            <span>Todos los niveles</span>
+          </div>
+          <div class="clase-card__times">
+            <span>Viernes 7:30</span><span>Sábado 9:00</span>
+          </div>
+        </div>
+        <div class="clase-card clase-card--cta reveal-up" data-delay="500">
+          <div class="clase-card__icon">🎯</div>
+          <h3>¿No sabes por dónde empezar?</h3>
+          <p>Hazte una <strong>clase de prueba gratuita</strong> y nuestros coaches te guiarán al programa perfecto para ti.</p>
+          <a href="#contacto" class="btn btn--primary btn--sm">Reservar clase gratis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMACION / WOD SAMPLE -->
+  <section class="programacion section" id="programacion">
+    <div class="container">
+      <div class="programacion__header">
+        <div>
+          <div class="section-tag reveal-up"><span class="dot dot--lavender"></span>Esta semana</div>
+          <h2 class="section-title reveal-up">El WOD<br/>no espera.</h2>
+        </div>
+        <p class="programacion__desc reveal-up">
+          Nuestra programación es periodizada, inteligente y siempre variada. Aquí tienes un vistazo de esta semana. Conecta con nuestra app para ver cada día completo.
+        </p>
+      </div>
+      <div class="wod-list">
+        <div class="wod-item reveal-up" data-delay="0">
+          <div class="wod-item__day">LUN</div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--strength">Strength</div>
+            <p class="wod-item__name">Back Squat 5×3 @ 85%</p>
+          </div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--wod">WOD</div>
+            <p class="wod-item__name">21-15-9 Thrusters + Pull-ups</p>
+          </div>
+        </div>
+        <div class="wod-item reveal-up" data-delay="100">
+          <div class="wod-item__day">MAR</div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--skill">Skill</div>
+            <p class="wod-item__name">Handstand Walk Progressions</p>
+          </div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--wod">WOD</div>
+            <p class="wod-item__name">AMRAP 20 – Row + DB Snatches + Box Jumps</p>
+          </div>
+        </div>
+        <div class="wod-item reveal-up" data-delay="200">
+          <div class="wod-item__day">MIÉ</div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--strength">Strength</div>
+            <p class="wod-item__name">Deadlift 3×5 @ 80% + Pendlay Row</p>
+          </div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--wod">WOD</div>
+            <p class="wod-item__name">EMOM 16 – Power Clean + Burpees</p>
+          </div>
+        </div>
+        <div class="wod-item reveal-up" data-delay="300">
+          <div class="wod-item__day">JUE</div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--skill">Skill</div>
+            <p class="wod-item__name">Kipping Pull-up / Butterfly</p>
+          </div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--wod">WOD</div>
+            <p class="wod-item__name">For Time – 400m Run + 50 Wall Balls + 400m Run</p>
+          </div>
+        </div>
+        <div class="wod-item reveal-up" data-delay="400">
+          <div class="wod-item__day">VIE</div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--strength">Strength</div>
+            <p class="wod-item__name">Press Banca 4×6 + Ring Dips</p>
+          </div>
+          <div class="wod-item__content">
+            <div class="wod-item__label wod-item__label--wod">WOD</div>
+            <p class="wod-item__name">Chipper – 50-40-30-20-10 DUs + Push-ups + Squats</p>
+          </div>
+        </div>
+        <div class="wod-item wod-item--weekend reveal-up" data-delay="500">
+          <div class="wod-item__day">SAB</div>
+          <div class="wod-item__content" style="flex:1">
+            <div class="wod-item__label wod-item__label--wod">Partner WOD 🎉</div>
+            <p class="wod-item__name">Team Challenge – ¡La más esperada de la semana! Trae a un amigo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHES -->
+  <section class="coaches section section--dark" id="coaches">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag section-tag--light reveal-up"><span class="dot dot--lime"></span>Nuestro equipo</div>
+        <h2 class="section-title section-title--light reveal-up">Coaches que<br/><em>transforman</em> vidas.</h2>
+      </div>
+      <div class="coaches__grid">
+        <div class="coach-card reveal-up" data-delay="0">
+          <div class="coach-card__avatar coach-card__avatar--1">
+            <div class="coach-card__avatar-inner">MR</div>
+          </div>
+          <div class="coach-card__info">
+            <h3>María Rodríguez</h3>
+            <span class="coach-card__role">Head Coach · CF L3</span>
+            <p>10 años en CrossFit, competidora en Games regionales. Especialista en movimiento olímpico y programación de rendimiento.</p>
+            <div class="coach-card__certs">
+              <span>CF L3</span><span>Olympic Lifting</span><span>Nutrition</span>
+            </div>
+          </div>
+        </div>
+        <div class="coach-card reveal-up" data-delay="150">
+          <div class="coach-card__avatar coach-card__avatar--2">
+            <div class="coach-card__avatar-inner">JM</div>
+          </div>
+          <div class="coach-card__info">
+            <h3>Javier Morales</h3>
+            <span class="coach-card__role">Coach · CF L2 · Fisio</span>
+            <p>Fisioterapeuta de formación y crossfitter de corazón. Tu seguridad y técnica son su prioridad absoluta en cada clase.</p>
+            <div class="coach-card__certs">
+              <span>CF L2</span><span>Fisioterapia</span><span>Mobility</span>
+            </div>
+          </div>
+        </div>
+        <div class="coach-card reveal-up" data-delay="300">
+          <div class="coach-card__avatar coach-card__avatar--3">
+            <div class="coach-card__avatar-inner">LP</div>
+          </div>
+          <div class="coach-card__info">
+            <h3>Laura Pérez</h3>
+            <span class="coach-card__role">Coach · CF L2 · Endurance</span>
+            <p>Maratoniana reconvertida al CrossFit. Experta en trabajo cardiovascular y en hacer que cada AMRAP sea una experiencia épica.</p>
+            <div class="coach-card__certs">
+              <span>CF L2</span><span>Running Coach</span><span>Rowing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALACIONES -->
+  <section class="instalaciones section" id="instalaciones">
+    <div class="container">
+      <div class="section-tag reveal-up"><span class="dot dot--cyan"></span>Nuestro espacio</div>
+      <h2 class="section-title reveal-up">El box que<br/>mereces.</h2>
+      <div class="instalaciones__grid">
+        <div class="instala-item reveal-up" data-delay="0">
+          <span class="instala-icon">🏗</span>
+          <h4>600 m² de espacio</h4>
+          <p>Zona de barras olímpicas, plataformas, rings, cuerda, remo, assault bikes y mucho más.</p>
+        </div>
+        <div class="instala-item reveal-up" data-delay="100">
+          <span class="instala-icon">🚿</span>
+          <h4>Vestuarios completos</h4>
+          <p>Duchas calientes, taquillas individuales y zona de recuperación. Viene, entrena, y vete fresco.</p>
+        </div>
+        <div class="instala-item reveal-up" data-delay="200">
+          <span class="instala-icon">📱</span>
+          <h4>App propia</h4>
+          <p>Reserva clases, consulta el WOD, sigue tu progreso y comunícate con tus coaches desde el móvil.</p>
+        </div>
+        <div class="instala-item reveal-up" data-delay="300">
+          <span class="instala-icon">🥤</span>
+          <h4>Zona de nutrición</h4>
+          <p>Batidos, snacks saludables y asesoramiento nutricional integrado con tu entrenamiento.</p>
+        </div>
+        <div class="instala-item reveal-up" data-delay="400">
+          <span class="instala-icon">🅿️</span>
+          <h4>Parking gratuito</h4>
+          <p>Amplio aparcamiento propio para que lo último que te preocupe sea dónde dejar el coche.</p>
+        </div>
+        <div class="instala-item reveal-up" data-delay="500">
+          <span class="instala-icon">🏆</span>
+          <h4>Zona de competición</h4>
+          <p>Organizamos eventos internos regulares para que pongas a prueba tu progreso en un ambiente festivo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFAS -->
+  <section class="tarifas section section--dark" id="tarifas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag section-tag--light reveal-up"><span class="dot dot--lavender"></span>Tarifas</div>
+        <h2 class="section-title section-title--light reveal-up">Invierte en ti.<br/>Vale <em>cada euro.</em></h2>
+      </div>
+      <div class="tarifas__grid">
+        <div class="tarifa-card reveal-up" data-delay="0">
+          <div class="tarifa-card__header">
+            <h3>Iniciación</h3>
+            <span class="tarifa-card__tag">Para empezar</span>
+          </div>
+          <div class="tarifa-card__price">
+            <span class="price-amount">45</span>
+            <span class="price-period">€/mes</span>
+          </div>
+          <ul class="tarifa-card__features">
+            <li>✓ Curso de iniciación (4 sesiones)</li>
+            <li>✓ 2 clases WOD por semana</li>
+            <li>✓ Acceso a la app</li>
+            <li>✓ Evaluación de movimiento</li>
+            <li>✗ Clases ilimitadas</li>
+            <li>✗ Olimpic Lifting / Gymnastics</li>
+          </ul>
+          <a href="#contacto" class="btn btn--ghost-light">Empezar aquí</a>
+        </div>
+        <div class="tarifa-card tarifa-card--featured reveal-up" data-delay="150">
+          <div class="tarifa-card__popular">MÁS POPULAR</div>
+          <div class="tarifa-card__header">
+            <h3>Ilimitado</h3>
+            <span class="tarifa-card__tag">El más elegido</span>
+          </div>
+          <div class="tarifa-card__price">
+            <span class="price-amount">75</span>
+            <span class="price-period">€/mes</span>
+          </div>
+          <ul class="tarifa-card__features">
+            <li>✓ Clases WOD ilimitadas</li>
+            <li>✓ Olympic Lifting</li>
+            <li>✓ Gymnastics & Skills</li>
+            <li>✓ Endurance</li>
+            <li>✓ Acceso a app y seguimiento</li>
+            <li>✓ Descuento en nutrición</li>
+          </ul>
+          <a href="#contacto" class="btn btn--primary">Quiero este</a>
+        </div>
+        <div class="tarifa-card reveal-up" data-delay="300">
+          <div class="tarifa-card__header">
+            <h3>Performance</h3>
+            <span class="tarifa-card__tag">Para competidores</span>
+          </div>
+          <div class="tarifa-card__price">
+            <span class="price-amount">110</span>
+            <span class="price-period">€/mes</span>
+          </div>
+          <ul class="tarifa-card__features">
+            <li>✓ Todo lo del plan Ilimitado</li>
+            <li>✓ Programación individual</li>
+            <li>✓ 2 sesiones PT/mes</li>
+            <li>✓ Plan nutricional personalizado</li>
+            <li>✓ Acceso libre al box (Open Gym)</li>
+            <li>✓ Priority booking</li>
+          </ul>
+          <a href="#contacto" class="btn btn--ghost-light">Saber más</a>
+        </div>
+      </div>
+      <p class="tarifas__note reveal-up">💬 ¿Eres estudiante, militar o familia? Tenemos tarifas especiales. <a href="#contacto">Consúltanos sin compromiso.</a></p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios section" id="testimonios">
+    <div class="container">
+      <div class="section-tag reveal-up"><span class="dot dot--cyan"></span>Lo que dicen</div>
+      <h2 class="section-title reveal-up">La comunidad<br/>habla por sí sola.</h2>
+      <div class="testimonios__slider" id="testimoniosSlider">
+        <div class="testimonio-card active">
+          <div class="testimonio-card__stars">★★★★★</div>
+          <blockquote>"Llegué sin saber nada de CrossFit y con miedo. Hoy llevo 2 años y es lo mejor que me ha pasado. Los coaches son increíbles y la gente te hace sentir en casa desde el primer día."</blockquote>
+          <div class="testimonio-card__author">
+            <div class="author-avatar" style="background:var(--cyan)">AN</div>
+            <div>
+              <strong>Ana Navarro</strong>
+              <span>Miembro desde 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-card__stars">★★★★★</div>
+          <blockquote>"He probado varios gimnasios pero Sunkawakan es otra cosa. La programación es seria, los coaches saben lo que hacen y la vibra del box es única. No me iría ni loco."</blockquote>
+          <div class="testimonio-card__author">
+            <div class="author-avatar" style="background:var(--lime)">CR</div>
+            <div>
+              <strong>Carlos Ruiz</strong>
+              <span>Miembro desde 2021</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-card__stars">★★★★★</div>
+          <blockquote>"Perdí 15 kilos y gané más fuerza de la que jamás había tenido. Pero lo mejor no es el físico, es la confianza que te da saber que puedes con todo. Gracias Sunkawakan."</blockquote>
+          <div class="testimonio-card__author">
+            <div class="author-avatar" style="background:var(--lavender)">SG</div>
+            <div>
+              <strong>Sofía García</strong>
+              <span>Miembro desde 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-controls">
+          <button class="testimonio-btn" id="prevTestimonio">←</button>
+          <div class="testimonio-dots" id="testimonioDots">
+            <span class="dot-indicator active"></span>
+            <span class="dot-indicator"></span>
+            <span class="dot-indicator"></span>
+          </div>
+          <button class="testimonio-btn" id="nextTestimonio">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto section section--dark" id="contacto">
+    <div class="container">
+      <div class="contacto__grid">
+        <div class="contacto__info">
+          <div class="section-tag section-tag--light reveal-up"><span class="dot dot--lime"></span>Únete</div>
+          <h2 class="section-title section-title--light reveal-up">Tu primera<br/>clase es<br/><em>gratis.</em></h2>
+          <p class="body-text body-text--light reveal-up">Sin compromisos. Ven, conoce el box, prueba una clase y decide. Estamos seguros de que volverás.</p>
+          <div class="contacto__data reveal-up">
+            <div class="contact-item">
+              <span class="contact-item__icon">📍</span>
+              <div>
+                <strong>Dirección</strong>
+                <p>Calle Ejemplo 42, Polígono Industrial Las Cuevas, Granada</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__icon">⏰</span>
+              <div>
+                <strong>Horario del box</strong>
+                <p>Lun–Vie: 7:00 – 22:00 · Sáb–Dom: 9:00 – 14:00</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__icon">📲</span>
+              <div>
+                <strong>Contacto</strong>
+                <p>+34 600 000 000 · hola@sunkawakan.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacto__form reveal-up">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" />
+            </div>
+            <div class="form-group">
+              <label for="nivel">¿Cuál es tu nivel?</label>
+              <select id="nivel" name="nivel">
+                <option value="">Selecciona una opción</option>
+                <option value="principiante">Principiante total</option>
+                <option value="algo">Algo de experiencia</option>
+                <option value="crossfit">Hago CrossFit</option>
+                <option value="competidor">Competidor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">¿Algo que quieras contarnos?</label>
+              <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos tu objetivo o cualquier duda..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Reservar mi clase gratis 🔥</button>
+            <p class="form__disclaimer">Sin spam. Tu info es solo para contactarte, nunca la compartiremos.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <span class="form-success__icon">🎉</span>
+            <h3>¡Eres uno de los nuestros!</h3>
+            <p>Te contactamos en menos de 24h para confirmar tu primera clase. Prepárate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="nav__logo-text" style="font-size:1.5rem;">SUNKA<span class="accent">WAKAN</span></div>
+        <p>Training Club · Granada</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram" class="social-link">IG</a>
+          <a href="#" aria-label="Facebook" class="social-link">FB</a>
+          <a href="#" aria-label="YouTube" class="social-link">YT</a>
+          <a href="#" aria-label="TikTok" class="social-link">TK</a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Box</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#instalaciones">Instalaciones</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Entrenar</h4>
+        <ul>
+          <li><a href="#clases">Clases</a></li>
+          <li><a href="#programacion">Programación</a></li>
+          <li><a href="#tarifas">Tarifas</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Sunkawakan Training Club. Todos los derechos reservados.</p>
+    </div>
+    <div class="footer__wordmark">SUNKAWAKAN</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>

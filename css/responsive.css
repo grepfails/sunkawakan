@@ -1,0 +1,72 @@
+/* ============================================================
+   TABLET  (≤ 900px)
+   ============================================================ */
+@media (max-width: 900px) {
+  .nav__links { display: none; flex-direction: column; position: fixed; inset: 0; background: var(--black); justify-content: center; align-items: center; gap: 2.5rem; z-index: 999; }
+  .nav__links.open { display: flex; animation: fadeUp .35s var(--ease-out-expo); }
+  .nav__link { font-size: 1.1rem; }
+  .nav__hamburger { display: flex; z-index: 1001; }
+
+  .hero__stats { position: static; flex-direction: row; justify-content: flex-start; gap: 2.5rem; margin-top: 3rem; }
+  .hero { flex-direction: column; justify-content: flex-end; padding-bottom: 5rem; }
+  .hero__content { max-width: 100%; }
+
+  .nosotros__grid { grid-template-columns: 1fr; gap: 3rem; }
+  .nosotros__visual { height: 320px; }
+
+  .clases__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .programacion__header { grid-template-columns: 1fr; gap: 1rem; }
+
+  .coaches__grid { grid-template-columns: 1fr 1fr; }
+
+  .instalaciones__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .tarifas__grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+
+  .contacto__grid { grid-template-columns: 1fr; gap: 3rem; }
+
+  .footer__inner { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+}
+
+/* ============================================================
+   MOBILE  (≤ 600px)
+   ============================================================ */
+@media (max-width: 600px) {
+  :root { --section-pad: 4rem; }
+
+  .hero__title { font-size: clamp(3.5rem, 16vw, 5rem); }
+  .hero__stats { flex-direction: column; gap: 1.25rem; }
+  .hero__ctas { flex-direction: column; }
+  .hero__ctas .btn { width: 100%; justify-content: center; }
+
+  .clases__grid { grid-template-columns: 1fr; }
+  .coaches__grid { grid-template-columns: 1fr; }
+  .instalaciones__grid { grid-template-columns: 1fr; }
+  .tarifas__grid { max-width: 100%; }
+
+  .wod-item { grid-template-columns: 48px 1fr; }
+  .wod-item > .wod-item__content:last-child { display: none; }
+
+  .footer__inner { grid-template-columns: 1fr; }
+
+  .cursor, .cursor-follower { display: none; }
+}
+
+/* ============================================================
+   FIXES MÓVIL
+   ============================================================ */
+@media (max-width: 600px) {
+  /* Bajar el scroll-hint para que no se monte sobre las stats */
+  .hero__scroll-hint {
+    bottom: .6rem;
+  }
+}
+
+/* Menú abierto: fondo siempre negro sólido aunque el nav tenga scrolled */
+@media (max-width: 900px) {
+  .nav.scrolled .nav__links.open {
+    background: var(--black);
+    backdrop-filter: none;
+  }
+}
