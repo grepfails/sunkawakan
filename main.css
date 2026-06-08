@@ -460,6 +460,8 @@ button:hover ~ .cursor { transform: translate(-50%, -50%) scale(2); background: 
   color: var(--black);
 }
 .stat__num::after { content: '+'; color: var(--cyan); }
+.stat__num.stat--lime::after { content: '+'; color: var(--lime); }
+.stat__num.stat--lavender::after { content: '+'; color: var(--lavender); }
 .stat__label {
   font-family: var(--font-mono);
   font-size: .68rem;
