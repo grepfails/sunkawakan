@@ -356,6 +356,18 @@ button:hover ~ .cursor { transform: translate(-50%, -50%) scale(2); background: 
   animation: floatY 4.5s ease-in-out infinite 1s;
 }
 
+/* estrellas: estilos en animations.css */
+ 
+/* ---------- noise ---------- */
+.hero__noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: .25;
+  pointer-events: none;
+  z-index: 4;
+}
+
 /* ---------- noise ---------- */
 .hero__noise {
   position: absolute;

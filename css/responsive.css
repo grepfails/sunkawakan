@@ -70,3 +70,8 @@
     backdrop-filter: none;
   }
 }
+
+/* Ocultar estrellas decorativas en móvil */
+@media (max-width: 600px) {
+  .hero__bg-strokes .stroke { display: none; }
+}
