@@ -1,27 +1,27 @@
 :root {
-  /* Brand Colors – from logo */
-  --black:     #0d0d0d;
-  --off-black: #141414;
-  --dark:      #1a1a1a;
-  --cyan:      #3ec9c9;
-  --lime:      #b8d44e;
-  --lavender:  #b49fd8;
-  --white:     #f5f5f0;
-  --grey-100:  #f0f0ea;
-  --grey-200:  #e0e0d8;
-  --grey-600:  #888880;
+    /* Brand Colors – from logo */
+    --black:     #0d0d0d;
+    --off-black: #141414;
+    --dark:      #1a1a1a;
+    --cyan:      #3ec9c9;
+    --lime:      #b8d44e;
+    --lavender:  #b49fd8;
+    --white:     #f5f5f0;
+    --grey-100:  #f0f0ea;
+    --grey-200:  #e0e0d8;
+    --grey-600:  #888880;
 
-  /* Typography */
-  --font-display: 'Bebas Neue', Impact, sans-serif;
-  --font-body:    'DM Sans', system-ui, sans-serif;
-  --font-mono:    'Space Mono', monospace;
+    /* Typography */
+    --font-display: 'Bebas Neue', Impact, sans-serif;
+    --font-body:    'DM Sans', system-ui, sans-serif;
+    --font-mono:    'Space Mono', monospace;
 
-  /* Spacing */
-  --section-pad: clamp(5rem, 10vw, 9rem);
-  --container:   1200px;
-  --gap:         2rem;
+    /* Spacing */
+    --section-pad: clamp(5rem, 10vw, 9rem);
+    --container:   1200px;
+    --gap:         2rem;
 
-  /* Animation */
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-bounce:   cubic-bezier(0.34, 1.56, 0.64, 1);
+    /* Animation */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-bounce:   cubic-bezier(0.34, 1.56, 0.64, 1);
 }
