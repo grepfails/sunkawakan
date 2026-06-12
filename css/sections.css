@@ -65,6 +65,37 @@
 }
 
 .nosotros__content {}
+.nosotros__hook {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: -.25rem;
+}
+.nosotros__phonetic {
+    font-family: var(--font-mono);
+    font-size: .78em;
+    color: var(--grey-600);
+    letter-spacing: .02em;
+}
+.nosotros__values {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .4rem .65rem;
+    padding: .9rem 1.2rem;
+    background: var(--grey-100);
+    border-left: 3px solid var(--lime);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    font-size: .95rem;
+    color: var(--black);
+    margin: .25rem 0 1.5rem;
+}
+.nosotros__vsep {
+    color: var(--lime);
+    font-style: normal;
+    font-size: .7rem;
+}
 .nosotros__pillars {
     display: flex;
     flex-direction: column;
