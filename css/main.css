@@ -173,6 +173,7 @@ button:hover ~ .cursor { transform: translate(-50%, -50%) scale(2); background: 
     box-shadow: 0 1px 0 rgba(255,255,255,.05);
 }
 /* Links y logo en blanco cuando el nav está scrolled (fondo oscuro) */
+.nav.scrolled .nav__logo-img { background-color: white;}
 .nav.scrolled .nav__link { color: rgba(255,255,255,.7); }
 .nav.scrolled .nav__link:hover { color: var(--white); }
 .nav.scrolled .nav__hamburger span { background: var(--white); }

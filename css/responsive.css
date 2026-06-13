@@ -59,7 +59,7 @@
 @media (max-width: 600px) {
     /* Bajar el scroll-hint para que no se monte sobre las stats */
     .hero__scroll-hint {
-        bottom: .6rem;
+        bottom: 0;
     }
 }
 
