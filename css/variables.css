@@ -1,20 +1,29 @@
+@font-face {
+    font-family: 'Honeypirls';
+    src: url('../assets/fonts/Honeypirls Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     /* Brand Colors – from logo */
     --black:     #0d0d0d;
     --off-black: #141414;
     --dark:      #1a1a1a;
-    --cyan:      #3ec9c9;
-    --lime:      #b8d44e;
-    --lavender:  #b49fd8;
+    --cyan:      #10CFC9;
+    --lime:      #CBE880;
+    --lavender:  #C2A6E1;
     --white:     #f5f5f0;
     --grey-100:  #f0f0ea;
     --grey-200:  #e0e0d8;
     --grey-600:  #888880;
 
     /* Typography */
-    --font-display: 'Bebas Neue', Impact, sans-serif;
-    --font-body:    'DM Sans', system-ui, sans-serif;
-    --font-mono:    'Space Mono', monospace;
+    --font-display:  'Bebas Neue', Impact, sans-serif;
+    --font-brand:    'Honeypirls', sans-serif;
+    --font-body:     'DM Sans', system-ui, sans-serif;
+    --font-mono:     'Space Mono', monospace;
 
     /* Spacing */
     --section-pad: clamp(5rem, 10vw, 9rem);
