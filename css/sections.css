@@ -408,10 +408,23 @@
    ============================================================ */
 .tarifas__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     align-items: stretch;
 }
+.tarifas__grid--4 { grid-template-columns: repeat(4, 1fr); }
+.tarifas__grid--2 { grid-template-columns: repeat(2, 1fr); max-width: 720px; }
+.tarifas__block { margin-top: 3.5rem; }
+.tarifas__block-title {
+    font-family: var(--font-mono);
+    font-size: .72rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.35);
+    margin-bottom: 1.5rem;
+}
+.tarifas__grid--4 .tarifa-card { padding: 1.75rem; }
+.tarifas__grid--4 .price-amount { font-size: 3rem; }
+.tarifas__grid--4 .tarifa-card__header h3 { font-size: 1.6rem; }
 .tarifa-card {
     background: var(--dark);
     border: 1px solid rgba(255,255,255,.08);
@@ -486,6 +499,96 @@
 }
 .tarifas__note a { color: var(--cyan); }
 .tarifas__note a:hover { text-decoration: underline; }
+
+/* ============================================================
+   PROMOCIONES
+   ============================================================ */
+.promo-season {
+    margin-bottom: 3rem;
+}
+.promo-season__tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: .65rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--lavender);
+    padding: .35rem 1rem;
+    border-radius: 100px;
+    margin-bottom: .9rem;
+}
+.promo-season__subtitle {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    color: rgba(255,255,255,.55);
+    line-height: 1.6;
+}
+.promo__tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.promo-tier {
+    background: var(--dark);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s var(--ease-out-expo), box-shadow .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.promo-tier:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+.promo-tier--top { border-color: rgba(203, 232, 128, .2); }
+.promo-tier__accent {
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 100%;
+    border-radius: 0 2px 2px 0;
+}
+.promo-tier__icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.promo-tier h3 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    letter-spacing: .04em;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+}
+.promo-tier__list {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+    flex: 1;
+}
+.promo-tier__list li {
+    font-size: .9rem;
+    color: rgba(255,255,255,.55);
+    line-height: 1.65;
+    padding-left: 1.25rem;
+    position: relative;
+}
+.promo-tier__list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--lavender);
+    font-size: .75rem;
+    top: .2em;
+}
+.promo-tier--top .promo-tier__list li::before { color: var(--lime); }
+.promo__disclaimer {
+    margin-top: 2.5rem;
+    font-size: .78rem;
+    color: rgba(255,255,255,.3);
+    font-family: var(--font-mono);
+    letter-spacing: .06em;
+}
 
 /* ============================================================
    TESTIMONIOS
