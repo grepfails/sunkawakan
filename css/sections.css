@@ -259,61 +259,59 @@
 .clase-card--cta p { color: rgba(255,255,255,.6); }
 
 /* ============================================================
-   PROGRAMACION
+   HORARIOS
    ============================================================ */
-.programacion__header {
+.horarios__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: end;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
-.programacion__desc {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--grey-600);
-    align-self: center;
+.horario-card {
+    background: var(--white);
+    border: 1px solid var(--grey-200);
+    border-radius: 16px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s var(--ease-out-expo), box-shadow .3s;
 }
-.wod-list { display: flex; flex-direction: column; }
-.wod-item {
-    display: grid;
-    grid-template-columns: 60px 1fr 1fr;
-    gap: 1.5rem;
-    align-items: center;
-    padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid var(--grey-200);
-    transition: background .2s;
-    border-radius: 8px;
+.horario-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.08); }
+.horario-card__accent {
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 0 2px 2px 0;
 }
-.wod-item:hover { background: var(--grey-100); }
-.wod-item--weekend {
-    grid-template-columns: 60px 1fr;
-    background: linear-gradient(90deg, rgba(62,201,201,.08), transparent);
-    border: 1px solid rgba(62,201,201,.15);
-    border-radius: 8px;
-    margin-top: .5rem;
-}
-.wod-item__day {
+.horario-card__icon { font-size: 2rem; margin-bottom: 1rem; }
+.horario-card h3 {
     font-family: var(--font-display);
-    font-size: 1.5rem;
-    letter-spacing: .08em;
-    color: var(--grey-600);
+    font-size: 2.5rem;
+    letter-spacing: .04em;
+    color: var(--black);
+    margin-bottom: 1.75rem;
 }
-.wod-item__content { display: flex; flex-direction: column; gap: .35rem; }
-.wod-item__label {
+.horario-card__rows { display: flex; flex-direction: column; gap: 1.75rem; }
+.horario-group { display: flex; flex-direction: column; gap: .4rem; }
+.horario-group__label {
     font-family: var(--font-mono);
     font-size: .65rem;
-    letter-spacing: .12em;
+    letter-spacing: .18em;
     text-transform: uppercase;
-    padding: .2rem .6rem;
-    border-radius: 100px;
-    display: inline-block;
-    width: fit-content;
+    color: var(--grey-600);
+    margin-bottom: .15rem;
 }
-.wod-item__label--strength { background: rgba(184,212,78,.15); color: var(--lime); }
-.wod-item__label--skill    { background: rgba(180,159,216,.15); color: var(--lavender); }
-.wod-item__label--wod      { background: rgba(62,201,201,.12); color: var(--cyan); }
-.wod-item__name { font-size: .95rem; font-weight: 500; color: var(--black); }
+.horario-slots { display: flex; flex-direction: column; }
+.horario-slot {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    letter-spacing: .04em;
+    color: var(--black);
+    line-height: 1;
+    padding: .55rem 0;
+    border-bottom: 1px solid var(--grey-200);
+}
+.horario-slot:last-child { border-bottom: none; }
 
 /* ============================================================
    COACHES

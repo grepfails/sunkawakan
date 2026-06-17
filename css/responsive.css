@@ -16,7 +16,7 @@
 
     .clases__grid { grid-template-columns: repeat(2, 1fr); }
 
-    .programacion__header { grid-template-columns: 1fr; gap: 1rem; }
+    .horarios__grid { grid-template-columns: 1fr; }
 
     .coaches__grid { grid-template-columns: 1fr 1fr; }
 
@@ -48,8 +48,6 @@
     .tarifas__grid--4,
     .tarifas__grid--2 { grid-template-columns: 1fr; }
 
-    .wod-item { grid-template-columns: 48px 1fr; }
-    .wod-item > .wod-item__content:last-child { display: none; }
 
     .footer__inner { grid-template-columns: 1fr; }
 

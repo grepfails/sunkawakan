@@ -33,7 +33,7 @@
         <ul class="nav__links" id="navLinks">
             <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
             <li><a href="#clases" class="nav__link">Clases</a></li>
-            <li><a href="#programacion" class="nav__link">Programación</a></li>
+            <li><a href="#horarios" class="nav__link">Horarios</a></li>
             <li><a href="#coaches" class="nav__link">Coaches</a></li>
             <li><a href="#tarifas" class="nav__link">Tarifas</a></li>
             <li><a href="#contacto" class="nav__link nav__link--cta">Únete</a></li>
@@ -371,79 +371,53 @@
         </div>
     </section>
 
-    <!-- PROGRAMACION / WOD SAMPLE -->
-    <section class="programacion section" id="programacion">
+    <!-- HORARIOS -->
+    <section class="horarios section" id="horarios">
         <div class="container">
-            <div class="programacion__header">
-                <div>
-                    <div class="section-tag reveal-up"><span class="dot dot--lavender"></span>Esta semana</div>
-                    <h2 class="section-title reveal-up">El WOD<br/>no espera.</h2>
-                </div>
-                <p class="programacion__desc reveal-up">
-                    Nuestra programación es periodizada, inteligente y siempre variada. Aquí tienes un vistazo de esta semana. Conecta con nuestra app para ver cada día completo.
-                </p>
+            <div class="section-header">
+                <div class="section-tag reveal-up"><span class="dot dot--cyan"></span>Cuándo entrenamos</div>
+                <h2 class="section-title reveal-up">Siempre hay<br/>un hueco <em>para ti.</em></h2>
             </div>
-            <div class="wod-list">
-                <div class="wod-item reveal-up" data-delay="0">
-                    <div class="wod-item__day">LUN</div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--strength">Strength</div>
-                        <p class="wod-item__name">Back Squat 5×3 @ 85%</p>
-                    </div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--wod">WOD</div>
-                        <p class="wod-item__name">21-15-9 Thrusters + Pull-ups</p>
-                    </div>
-                </div>
-                <div class="wod-item reveal-up" data-delay="100">
-                    <div class="wod-item__day">MAR</div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--skill">Skill</div>
-                        <p class="wod-item__name">Handstand Walk Progressions</p>
-                    </div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--wod">WOD</div>
-                        <p class="wod-item__name">AMRAP 20 – Row + DB Snatches + Box Jumps</p>
-                    </div>
-                </div>
-                <div class="wod-item reveal-up" data-delay="200">
-                    <div class="wod-item__day">MIÉ</div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--strength">Strength</div>
-                        <p class="wod-item__name">Deadlift 3×5 @ 80% + Pendlay Row</p>
-                    </div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--wod">WOD</div>
-                        <p class="wod-item__name">EMOM 16 – Power Clean + Burpees</p>
+            <div class="horarios__grid">
+                <div class="horario-card reveal-up" data-delay="0">
+                    <div class="horario-card__accent" style="background: var(--cyan)"></div>
+                    <div class="horario-card__icon">⚡</div>
+                    <h3>Clases</h3>
+                    <div class="horario-card__rows">
+                        <div class="horario-group">
+                            <span class="horario-group__label">Lun – Vie</span>
+                            <div class="horario-slots">
+                                <span class="horario-slot">7:15 – 11:15</span>
+                                <span class="horario-slot">14:15 – 15:15</span>
+                                <span class="horario-slot">16:30 – 21:30</span>
+                            </div>
+                        </div>
+                        <div class="horario-group">
+                            <span class="horario-group__label">Sábado</span>
+                            <div class="horario-slots">
+                                <span class="horario-slot">9:00 – 11:00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="wod-item reveal-up" data-delay="300">
-                    <div class="wod-item__day">JUE</div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--skill">Skill</div>
-                        <p class="wod-item__name">Kipping Pull-up / Butterfly</p>
-                    </div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--wod">WOD</div>
-                        <p class="wod-item__name">For Time – 400m Run + 50 Wall Balls + 400m Run</p>
-                    </div>
-                </div>
-                <div class="wod-item reveal-up" data-delay="400">
-                    <div class="wod-item__day">VIE</div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--strength">Strength</div>
-                        <p class="wod-item__name">Press Banca 4×6 + Ring Dips</p>
-                    </div>
-                    <div class="wod-item__content">
-                        <div class="wod-item__label wod-item__label--wod">WOD</div>
-                        <p class="wod-item__name">Chipper – 50-40-30-20-10 DUs + Push-ups + Squats</p>
-                    </div>
-                </div>
-                <div class="wod-item wod-item--weekend reveal-up" data-delay="500">
-                    <div class="wod-item__day">SAB</div>
-                    <div class="wod-item__content" style="flex:1">
-                        <div class="wod-item__label wod-item__label--wod">Partner WOD 🎉</div>
-                        <p class="wod-item__name">Team Challenge – ¡La más esperada de la semana! Trae a un amigo.</p>
+                <div class="horario-card reveal-up" data-delay="150">
+                    <div class="horario-card__accent" style="background: var(--lime)"></div>
+                    <div class="horario-card__icon">🏃</div>
+                    <h3>Free Training</h3>
+                    <div class="horario-card__rows">
+                        <div class="horario-group">
+                            <span class="horario-group__label">Lun – Vie</span>
+                            <div class="horario-slots">
+                                <span class="horario-slot">7:00 – 15:00</span>
+                                <span class="horario-slot">16:00 – 22:00</span>
+                            </div>
+                        </div>
+                        <div class="horario-group">
+                            <span class="horario-group__label">Sábado</span>
+                            <div class="horario-slots">
+                                <span class="horario-slot">9:00 – 13:00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -772,7 +746,7 @@
                 <h4>Entrenar</h4>
                 <ul>
                     <li><a href="#clases">Clases</a></li>
-                    <li><a href="#programacion">Programación</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
                     <li><a href="#tarifas">Tarifas</a></li>
                 </ul>
             </div>
