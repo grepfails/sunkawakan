@@ -327,6 +327,8 @@
     overflow: hidden;
     border: 1px solid rgba(255,255,255,.06);
     transition: transform .3s var(--ease-out-expo);
+    display: flex;
+    flex-direction: column;
 }
 .coach-card:hover { transform: translateY(-8px); }
 .coach-card__avatar {
@@ -353,7 +355,13 @@
     color: var(--white);
     opacity: .5;
 }
-.coach-card__info { padding: 1.75rem; }
+.coach-card__info {
+    padding: 1.75rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .coach-card__info h3 {
     font-family: var(--font-display);
     font-size: 1.6rem;
@@ -371,7 +379,7 @@
     margin-bottom: 1rem;
 }
 .coach-card__info p { font-size: .88rem; color: rgba(255,255,255,.5); line-height: 1.65; margin-bottom: 1.25rem; }
-.coach-card__certs { display: flex; gap: .5rem; flex-wrap: wrap; }
+.coach-card__certs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 4px; }
 .coach-card__certs span {
     font-family: var(--font-mono);
     font-size: .65rem;
@@ -384,7 +392,7 @@
 }
 .coach-card__link {
     display: inline-block;
-    margin-top: 1.25rem;
+    margin-top: auto;
     font-family: var(--font-mono);
     font-size: .72rem;
     letter-spacing: .08em;
@@ -396,6 +404,27 @@
 .coach-card__link:hover {
     color: var(--lime);
     transform: translateX(4px);
+}
+.coach-card__social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+    color: rgba(255,255,255,.6);
+    transition: color .25s ease, border-color .25s ease, transform .25s ease;
+}
+.coach-card__social:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+    transform: translateY(-3px);
+}
+/* cuando hay enlace de texto encima, el icono va justo debajo, no absorbe el hueco */
+.coach-card__link + .coach-card__social {
+    margin-top: .9rem;
 }
 
 /* ============================================================
