@@ -500,6 +500,11 @@ button:hover ~ .cursor { transform: translate(-50%, -50%) scale(2); background: 
         backdrop-filter: none;
         box-shadow: none;
     }
+    /* Menú abierto (con o sin scroll): enlaces siempre blancos sobre el fondo oscuro */
+    .nav.menu-open .nav__link { color: rgba(255,255,255,.7); }
+    .nav.menu-open .nav__link:hover { color: var(--white); }
+    .nav.menu-open .nav__link--cta { color: var(--black) !important; }
+    .nav.menu-open .nav__hamburger span { background: var(--white); }
 }
 
 .font-brand {
