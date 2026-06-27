@@ -857,28 +857,30 @@
    Las dos olas tenues usan colores corporativos como decoración.
    ============================================================ */
 .section-divider {
+    --sd-h: clamp(48px, 7vw, 100px);
     position: relative;
+    z-index: 2;
     line-height: 0;
     pointer-events: none;
-    margin-top: -1px;      /* evita hairline entre sección y divisor */
-    margin-bottom: -1px;
+    background: transparent;            /* sin banda plana: la parte superior
+                                           de la ola deja ver la sección real */
+    margin-top: calc(-1 * var(--sd-h)); /* se solapa sobre el final de la sección anterior */
+    margin-bottom: 0;
 }
 .section-divider svg {
     display: block;
     width: 100%;
-    height: clamp(48px, 7vw, 100px);
+    height: var(--sd-h);
 }
 
-/* Claro  ->  oscuro */
+/* Claro  ->  oscuro (la ola sólida cae hacia la sección oscura) */
 .section-divider--to-dark {
-    background: var(--white);
     --sd-solid: var(--off-black);
     --sd-c1: var(--cyan);
     --sd-c2: var(--lavender);
 }
 /* Oscuro ->  claro */
 .section-divider--to-light {
-    background: var(--off-black);
     --sd-solid: var(--white);
     --sd-c1: var(--lime);
     --sd-c2: var(--cyan);
