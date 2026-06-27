@@ -862,10 +862,12 @@
     z-index: 2;
     line-height: 0;
     pointer-events: none;
-    background: transparent;            /* sin banda plana: la parte superior
-                                           de la ola deja ver la sección real */
+    /* Parte superior transparente (deja ver la sección anterior y su blob);
+       franja inferior con el color de destino para que el borde de la ola
+       funda contra el color correcto y no quede línea bajo el separador. */
+    background: linear-gradient(to bottom, transparent 88%, var(--sd-solid) 88%);
     margin-top: calc(-1 * var(--sd-h)); /* se solapa sobre el final de la sección anterior */
-    margin-bottom: 0;
+    margin-bottom: -1px;                /* cierra cualquier hueco subpíxel con la sección siguiente */
 }
 .section-divider svg {
     display: block;
