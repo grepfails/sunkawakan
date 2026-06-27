@@ -848,3 +848,38 @@
     white-space: nowrap;
     user-select: none;
 }
+
+/* ============================================================
+   SECTION DIVIDERS (olas onduladas entre secciones)
+   ------------------------------------------------------------
+   El fondo del divisor = color de la sección de la que VIENE.
+   La ola sólida (--sd-solid) = color de la sección a la que VA.
+   Las dos olas tenues usan colores corporativos como decoración.
+   ============================================================ */
+.section-divider {
+    position: relative;
+    line-height: 0;
+    pointer-events: none;
+    margin-top: -1px;      /* evita hairline entre sección y divisor */
+    margin-bottom: -1px;
+}
+.section-divider svg {
+    display: block;
+    width: 100%;
+    height: clamp(48px, 7vw, 100px);
+}
+
+/* Claro  ->  oscuro */
+.section-divider--to-dark {
+    background: var(--white);
+    --sd-solid: var(--off-black);
+    --sd-c1: var(--cyan);
+    --sd-c2: var(--lavender);
+}
+/* Oscuro ->  claro */
+.section-divider--to-light {
+    background: var(--off-black);
+    --sd-solid: var(--white);
+    --sd-c1: var(--lime);
+    --sd-c2: var(--cyan);
+}

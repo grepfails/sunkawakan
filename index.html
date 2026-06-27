@@ -17,6 +17,15 @@
 </head>
 <body>
 
+    <!-- DEFINICIÓN DE LA OLA DIVISORA (se reutiliza con <use>) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="wave-divider" viewBox="0 0 1236 199" preserveAspectRatio="none">
+            <path style="fill:var(--sd-c1);opacity:.3" d="M399.726 52.0761C300.884 15.2529 180.724 106.342 0 139.289V199.369H1236V160.608C935.116 187.741 1006.82 41.8993 892.478 5.07841C792.668 -27.0617 652.158 103.763 535.39 106.342C447.693 108.279 473.857 79.6935 399.726 52.0761Z"></path>
+            <path style="fill:var(--sd-c2);opacity:.4" d="M336.254 58.6265C233.963 32.8968 180.724 127.66 0 160.607V199.368H1236V166.421C871.16 231.114 1018.94 11.6271 827.069 12.597C722.213 13.127 635.685 122.91 518.917 125.489C402.148 128.068 415.23 78.4917 336.254 58.6265Z"></path>
+            <path style="fill:var(--sd-solid)" d="M315.42 59.5951C211.029 44.4943 180.724 127.66 0 160.607V199.368H1236V174.174C860.985 238.866 989.381 33.431 834.821 13.5664C730.819 0.199667 635.685 130.662 518.917 133.241C369.686 136.537 392.458 70.7391 315.42 59.5951Z"></path>
+        </symbol>
+    </svg>
+
     <!-- CURSOR PERSONALIZADO -->
     <div class="cursor" id="cursor"></div>
     <div class="cursor-follower" id="cursorFollower"></div>
@@ -195,6 +204,11 @@
         </div>
     </section>
 
+    <!-- DIVISOR: nosotros (claro) -> clases (oscuro) -->
+    <div class="section-divider section-divider--to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1236 199" preserveAspectRatio="none"><use href="#wave-divider"></use></svg>
+    </div>
+
     <!-- CLASES -->
     <section class="clases section section--dark" id="clases">
         <div class="container">
@@ -280,6 +294,11 @@
         </div>
     </section>
 
+    <!-- DIVISOR: clases (oscuro) -> instalaciones (claro) -->
+    <div class="section-divider section-divider--to-light" aria-hidden="true">
+        <svg viewBox="0 0 1236 199" preserveAspectRatio="none"><use href="#wave-divider"></use></svg>
+    </div>
+
     <!-- INSTALACIONES -->
     <section class="instalaciones section" id="instalaciones">
         <div class="container">
@@ -319,6 +338,11 @@
             </div>
         </div>
     </section>
+
+    <!-- DIVISOR: instalaciones (claro) -> coaches (oscuro) -->
+    <div class="section-divider section-divider--to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1236 199" preserveAspectRatio="none"><use href="#wave-divider"></use></svg>
+    </div>
 
     <!-- COACHES -->
     <section class="coaches section section--dark" id="coaches">
@@ -373,6 +397,11 @@
         </div>
     </section>
 
+    <!-- DIVISOR: coaches (oscuro) -> horarios (claro) -->
+    <div class="section-divider section-divider--to-light" aria-hidden="true">
+        <svg viewBox="0 0 1236 199" preserveAspectRatio="none"><use href="#wave-divider"></use></svg>
+    </div>
+
     <!-- HORARIOS -->
     <section class="horarios section" id="horarios">
         <div class="container">
@@ -425,6 +454,11 @@
             </div>
         </div>
     </section>
+
+    <!-- DIVISOR: horarios (claro) -> tarifas (oscuro) -->
+    <div class="section-divider section-divider--to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1236 199" preserveAspectRatio="none"><use href="#wave-divider"></use></svg>
+    </div>
 
     <!-- TARIFAS -->
     <section class="tarifas section section--dark" id="tarifas">
@@ -598,6 +632,11 @@
         </div>
     </section>
 
+    <!-- DIVISOR: promociones (oscuro) -> testimonios (claro) -->
+    <div class="section-divider section-divider--to-light" aria-hidden="true">
+        <svg viewBox="0 0 1236 199" preserveAspectRatio="none"><use href="#wave-divider"></use></svg>
+    </div>
+
     <!-- TESTIMONIOS -->
     <section class="testimonios section" id="testimonios">
         <div class="container">
@@ -685,6 +724,11 @@
             </div>
         </div>
     </section>
+
+    <!-- DIVISOR: testimonios (claro) -> contacto (oscuro) -->
+    <div class="section-divider section-divider--to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1236 199" preserveAspectRatio="none"><use href="#wave-divider"></use></svg>
+    </div>
 
     <!-- CONTACTO -->
     <section class="contacto section section--dark" id="contacto">
