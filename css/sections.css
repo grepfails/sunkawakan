@@ -857,7 +857,7 @@
    Las dos olas tenues usan colores corporativos como decoración.
    ============================================================ */
 .section-divider {
-    --sd-h: clamp(48px, 7vw, 100px);
+    --sd-h: clamp(48px, 7vw, 102px);
     position: relative;
     z-index: 2;
     line-height: 0;
