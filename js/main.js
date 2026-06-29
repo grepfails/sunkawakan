@@ -94,22 +94,6 @@ const statsObserver = new IntersectionObserver(entries => {
 }, { threshold: .5 });
 if (statEls.length) statsObserver.observe(statEls[0].closest('.hero__stats'));
 
-/* ============================================================
-   CONTACT FORM
-   ============================================================ */
-const form = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-
-form?.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Enviando…';
-    btn.disabled = true;
-    setTimeout(() => {
-        form.style.display = 'none';
-        formSuccess.style.display = 'flex';
-    }, 1200);
-});
 
 /* ============================================================
    ACTIVE NAV LINK on scroll
