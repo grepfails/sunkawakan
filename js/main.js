@@ -96,6 +96,67 @@ if (statEls.length) statsObserver.observe(statEls[0].closest('.hero__stats'));
 
 
 /* ============================================================
+   LIGHTBOX (collage)
+   ============================================================ */
+const lightbox        = document.getElementById('lightbox');
+const lightboxImg     = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const collageImgs     = [...document.querySelectorAll('.collage__item img')];
+
+if (lightbox && collageImgs.length) {
+    let currentIndex = 0;
+
+    function showImage(index) {
+        currentIndex = (index + collageImgs.length) % collageImgs.length;
+        const img = collageImgs[currentIndex];
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = img.alt;
+    }
+
+    function openLightbox(index) {
+        showImage(index);
+        lightbox.hidden = false;
+        requestAnimationFrame(() => lightbox.classList.add('open'));
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+        setTimeout(() => { lightbox.hidden = true; }, 300);
+    }
+
+    collageImgs.forEach((img, i) => {
+        img.closest('.collage__item').addEventListener('click', () => openLightbox(i));
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', e => { e.stopPropagation(); showImage(currentIndex - 1); });
+    document.getElementById('lightboxNext').addEventListener('click', e => { e.stopPropagation(); showImage(currentIndex + 1); });
+
+    lightbox.addEventListener('click', e => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', e => {
+        if (lightbox.hidden) return;
+        if (e.key === 'Escape')     closeLightbox();
+        if (e.key === 'ArrowLeft')  showImage(currentIndex - 1);
+        if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+    });
+
+    let touchStartX = 0;
+    lightbox.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    lightbox.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 50) showImage(currentIndex + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+}
+
+/* ============================================================
    ACTIVE NAV LINK on scroll
    ============================================================ */
 const sections = document.querySelectorAll('section[id]');
