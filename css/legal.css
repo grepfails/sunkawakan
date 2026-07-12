@@ -1,0 +1,104 @@
+/* ============================================================
+   PÁGINAS LEGALES (aviso legal, privacidad)
+   ============================================================ */
+.legal {
+    padding: calc(6rem + 2vw) 0 var(--section-pad);
+    min-height: 70vh;
+}
+
+.legal .container { max-width: 820px; }
+
+.legal__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 6vw, 4.5rem);
+    line-height: .95;
+    margin-bottom: .75rem;
+    color: var(--black);
+}
+.legal__title em {
+    font-style: normal;
+    color: var(--cyan);
+}
+
+.legal__updated {
+    font-family: var(--font-mono);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--grey-600);
+    margin-bottom: 3rem;
+    display: block;
+}
+
+.legal h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    letter-spacing: .02em;
+    margin: 2.5rem 0 1rem;
+    color: var(--black);
+}
+
+.legal h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 1.75rem 0 .6rem;
+    color: var(--black);
+}
+
+.legal p,
+.legal li {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #55554e;
+    margin-bottom: 1rem;
+}
+
+.legal ul {
+    padding-left: 1.4rem;
+    margin-bottom: 1.25rem;
+}
+.legal ul li {
+    list-style: disc;
+    margin-bottom: .4rem;
+}
+
+.legal a {
+    color: var(--black);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--cyan);
+    text-underline-offset: 3px;
+    transition: color .2s;
+}
+.legal a:hover { color: var(--cyan); }
+
+.legal strong { color: var(--black); }
+
+/* Bloque destacado (ej. "no usamos cookies") */
+.legal__highlight {
+    background: rgba(16, 207, 201, .08);
+    border-left: 3px solid var(--cyan);
+    border-radius: 0 10px 10px 0;
+    padding: 1.1rem 1.4rem;
+    margin: 1.5rem 0;
+}
+.legal__highlight p { margin-bottom: 0; }
+
+/* Datos a completar por el titular */
+.legal__todo {
+    background: rgba(194, 166, 225, .25);
+    border-radius: 4px;
+    padding: 0 .35rem;
+    font-style: italic;
+}
+
+.legal__back {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 3rem;
+    font-family: var(--font-mono);
+    font-size: .8rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
